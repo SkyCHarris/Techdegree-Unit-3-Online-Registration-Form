@@ -1,0 +1,45 @@
+
+/* Base Styles */
+
+body {
+    font-family: 'Cardo', serif;
+}
+
+header {
+    background-color: #34091C;    ;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: .9em;
+}
+
+.secondary-header {
+    text-align: center;
+    font-size: .85em;
+}
+
+
+/* Contact Information Fieldset */
+.contact-information label {
+    display: block;
+    padding-top: 10px;
+}
+
+.contact-information input,
+.contact-information select, {
+    width: 100%;
+    height: 30px;
+}
+
+
+/* Newsletter Fieldset */
+
+.form-description {
+    display: block;
+    padding: 15px 0px 10px;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+}
