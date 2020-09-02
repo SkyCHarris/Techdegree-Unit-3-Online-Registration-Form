@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         <div class="contact-form">
             <form action="index.html" get="post">
                 <fieldset class="contact-information">
-                    <legend>Contact Information</legend>
+                    <legend class="fieldset-name">Contact Information</legend>
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="contact_name" required placeholder="Required">
                     
@@ -33,7 +33,7 @@
                     <input type="tel" id="phone" name="contact_phone">
 
                     <label for="address">Street Address</label>
-                    <input type="text" id="address" name="contact_address">
+                    <input type="text" id="address" name="contact_address" placeholder="ex. 123 Code Street">
                     
                     <label for="city">City</label>
                     <input type="text" id="city" name="contact_city">
@@ -98,8 +98,8 @@
                     <input type="text" id="zip" name="contact_zip" style="width: 45%">
                 </fieldset>
                 
-                <fieldset>
-                    <legend>Newsletter</legend>
+                <fieldset class="newsletter">
+                    <legend class="fieldset-name">Newsletter</legend>
                         <label class="form-description">Select the newsletters you would like to receive</label>
                         <input type="checkbox" id="html_news" value="newsletter_html_news" name="contact_newsletter">
                         <label for="html_news">HTML News</label><br>
@@ -121,6 +121,9 @@
             </form>
         </div>
     </main>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
 
 </body>
 </html>

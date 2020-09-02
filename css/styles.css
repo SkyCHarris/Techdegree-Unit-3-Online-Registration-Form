@@ -2,8 +2,9 @@
 /* Base Styles */
 
 body {
-    font-family: 'Cardo', serif;
+    font-family: 'Merriweather', serif;
     margin: 0px;
+    font-size: .8em;
 }
 
 header {
@@ -11,21 +12,28 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: .9em;
 }
 
 .secondary-header {
     text-align: center;
-    font-size: .80em;
-    padding: 15px;
-    border-bottom: 
 }
 
 
+
+
 /* Contact Information Fieldset */
+
+.contact-information,
+.newsletter,
+.secondary-header {
+    border: none;
+    padding: 20px;
+}
+
 .contact-information label {
     display: block;
     padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .contact-information input,
@@ -34,6 +42,11 @@ header {
     height: 30px;
 }
 
+.fieldset-name {
+    font-size: 1.3em;
+    padding-top: 15px;
+    font-weight: bold;
+}
 
 /* Newsletter Fieldset */
 
@@ -42,7 +55,28 @@ header {
     padding: 15px 0px 10px;
 }
 
+.newsletter input {
+    margin-bottom: 10px;
+}
+
 textarea {
     width: 100%;
     height: auto;
 }
+
+/* Footer */
+
+footer p {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+@media (min-width: 769px) {
+
+    .contact-information label {
+        display: inline;
+    }
+
+    .contact-information input {
+        width: 50%;
+    }
