@@ -1,4 +1,8 @@
-
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 /* Base Styles */
 
 body {
@@ -19,8 +23,6 @@ header {
 }
 
 
-
-
 /* Contact Information Fieldset */
 
 .contact-information,
@@ -29,6 +31,30 @@ header {
     border: none;
     padding: 20px;
 }
+
+.contact-information label,
+.contact-information input,
+.contact-information select {
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    background: #FAF4F7;
+    border: 2px darkgray solid;
+    padding: 7px;
+    height: auto;
+    width: 100%;
+    margin-right: 10px;
+}
+
 
 .fieldset-name {
     font-size: 1.3em;
@@ -53,4 +79,8 @@ footer p {
 
 @media (min-width: 769px) {
 
-    
+.contact-information label,
+.contact-information input,
+.contact-information select {
+    display: inline;
+    width: 70%;
