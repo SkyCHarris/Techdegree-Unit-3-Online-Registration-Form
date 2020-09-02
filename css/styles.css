@@ -9,8 +9,8 @@ body {
     font-family: 'Merriweather', serif;
     margin: 0px;
     font-size: .8em;
+    background-color: #F2F3EC;
 }
-
 header {
     background-color: #34091C;    ;
     color: white;
@@ -22,15 +22,28 @@ header {
     text-align: center;
 }
 
+form {
+    border-top: double #34091C 6px;
+    margin: 20px;
+    padding-top: 20px;
+}
+
 
 /* Contact Information Fieldset */
+
 
 .contact-information,
 .newsletter,
 .secondary-header {
     border: none;
-    padding: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
 }
+
+.contact-information {
+    border-bottom: solid #34091C 1.5px;
+}
+
 
 .contact-information label,
 .contact-information input,
@@ -55,6 +68,13 @@ textarea {
     margin-right: 10px;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    background-color: white;
+}
 
 .fieldset-name {
     font-size: 1.3em;
@@ -69,18 +89,45 @@ textarea {
     padding: 15px 0px 10px;
 }
 
+button {
+    background-color: #EC6988;
+    color: white;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    padding: 20px 10px;
+    margin-top: 20px;
+    width: 100%;
+}
 
 /* Footer */
 
 footer p {
     text-align: center;
     padding: 15px 0px;
+    font-style: italic;
 }
 
 @media (min-width: 769px) {
+
+main {
+    width: 60%;
+    margin: auto;
+}
 
 .contact-information label,
 .contact-information input,
 .contact-information select {
     display: inline;
     width: 70%;
+}
+
+.contact-information label {
+    display: inline-block;
+    width: 25%;
+}
+
+
+input, select {
+    margin-bottom: 10px;
+}
