@@ -30,18 +30,6 @@ header {
     padding: 20px;
 }
 
-.contact-information label {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-.contact-information input,
-#state {
-    width: 100%;
-    height: 30px;
-}
-
 .fieldset-name {
     font-size: 1.3em;
     padding-top: 15px;
@@ -55,14 +43,6 @@ header {
     padding: 15px 0px 10px;
 }
 
-.newsletter input {
-    margin-bottom: 10px;
-}
-
-textarea {
-    width: 100%;
-    height: auto;
-}
 
 /* Footer */
 
@@ -73,10 +53,4 @@ footer p {
 
 @media (min-width: 769px) {
 
-    .contact-information label {
-        display: inline;
-    }
-
-    .contact-information input {
-        width: 50%;
-    }
+    
