@@ -40,7 +40,7 @@
 
                     <label for="state">State</label>
                     <select id="state" name="user_state">
-                        <option value="choose_state" selected disabled>Choose State</option>
+                        <option value="choose_state" disabled selected>Choose State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -95,7 +95,7 @@
                     </select>
 
                     <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="contact_zip">
+                    <input type="text" id="zip" name="contact_zip" style="width: 45%">
                 </fieldset>
                 
                 <fieldset>
@@ -115,7 +115,8 @@
                         <label for="format_plain_text">Plain text</label><br>
 
                         <label class="form-description" for="message">Other topics you'd like to hear about</label>
-                        <textarea id="message" name="contact_message" rows="6" width="100%"></textarea>
+                        <textarea id="message" name="contact_message" rows="6"></textarea>
+                        <button type="submit">Sign Up</button>
                 </fieldset>
             </form>
         </div>
