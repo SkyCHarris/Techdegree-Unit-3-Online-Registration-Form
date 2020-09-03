@@ -3,6 +3,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 /* Base Styles */
 
 body {
@@ -20,12 +21,13 @@ header {
 
 .secondary-header {
     text-align: center;
+    padding-top: 15px;
+
 }
 
 form {
     border-top: double #34091C 6px;
     margin: 20px;
-    padding-top: 20px;
 }
 
 
@@ -78,7 +80,7 @@ textarea:focus {
 
 .fieldset-name {
     font-size: 1.3em;
-    padding-top: 15px;
+    padding: 15px 0px 10px;
     font-weight: bold;
 }
 
