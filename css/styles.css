@@ -12,6 +12,7 @@ body {
     font-size: .8em;
     background-color: #F2F3EC;
 }
+
 header {
     background-color: #34091C;    ;
     color: white;
@@ -22,7 +23,6 @@ header {
 .secondary-header {
     text-align: center;
     padding-top: 15px;
-
 }
 
 form {
@@ -45,7 +45,6 @@ form {
 .contact-information {
     border-bottom: solid #34091C 1.5px;
 }
-
 
 .contact-information label,
 .contact-information input,
@@ -110,7 +109,7 @@ footer p {
     font-style: italic;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 main {
     width: 60%;
