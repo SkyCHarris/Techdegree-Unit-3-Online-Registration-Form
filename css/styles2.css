@@ -1,0 +1,171 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+
+body {
+    background-color: #efeff5;
+    font-family: 'Merriweather', serif;
+    font-size: .8em;
+    color: 	#5c5c8a;
+    
+}
+
+header {
+    color: #fff;
+    background-color: #1e1e2f;
+    overflow: hidden;
+    text-align: center;
+    font-size: .8em;
+    height: 75px;
+    padding-top: 10px;
+}
+/* Header */
+
+.secondary-header {
+    text-align: center;
+    border-bottom: double #1e1e2f 6px;
+    margin-bottom: 25px;
+    padding: 8px 10px 15px;
+}
+
+.secondary-header h1 {
+    font-size: 1.4em;
+    color: #29293d;
+}
+
+/* Contact Information */
+
+.contact-information {
+    border-bottom: solid #1e1e2f 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    background: #FAF4F7;
+    border: 2px darkgray solid;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.zip-code {
+    display: flex;
+    flex-direction: column;
+}
+
+input#zip {
+    width: 50%;
+}
+
+input::placeholder {
+    text-align: right;
+    font-size: .8em;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.contact-information label {
+    margin-bottom: 8px;
+}
+
+fieldset {
+    border: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.fieldset-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Newsletter */
+
+.newsletter label {
+    margin-bottom: 10px;
+}
+
+.form-description {
+    margin-top: 10px;
+}
+
+button {
+    background-color:  #b3b3cc;
+    color: white;
+    padding: 14px 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Footer */
+
+footer p {
+    font-style: italic;
+    font-size: .85em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Flex */
+
+.container-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.name label,
+.email label,
+.phone label,
+.address label,
+.city label,
+.state label,
+.zip-code label {
+    display: block;
+}
+
+.container-two {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter label {
+    padding: 5px;
+}
+
+
+@media (min-width: 768px) {
+
+    .name,
+    .email,
+    .phone,
+    .address,
+    .city,
+    .state,
+    .zip-code {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-information label {
+        flex: 1 20%;
+        align-self: center;
+    }
+
+    .contact-information input {
+        flex: 1 75%;
+    }
+}

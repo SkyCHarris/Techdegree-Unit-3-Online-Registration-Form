@@ -111,26 +111,24 @@ footer p {
 
 @media (min-width: 768px) {
 
-    main {
-        width: 60%;
-        margin: auto;
-    }
+main {
+    width: 60%;
+    margin: auto;
+}
 
-    /* .contact-information label,
-    .contact-information input,
-    .contact-information select {
-        display: inline;
-        width: 70%;
-    }
+.contact-information label,
+.contact-information input,
+.contact-information select {
+    display: inline;
+    width: 70%;
+}
 
-    .contact-information label {
-        display: inline-block;
-        width: 25%;
-    } */
+.contact-information label {
+    display: inline-block;
+    width: 25%;
+}
 
 
-    input, select {
-        margin-bottom: 10px;
-    }
-
+input, select {
+    margin-bottom: 10px;
 }
